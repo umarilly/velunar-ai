@@ -135,7 +135,7 @@ export function AuthForm({ variant }: { variant: Variant }) {
         <Button
           type="button"
           variant="outline"
-          disabled={busy !== null}
+          disabled
           onClick={() => handleOAuth("google")}
         >
           {busy === "google" ? (
@@ -148,7 +148,7 @@ export function AuthForm({ variant }: { variant: Variant }) {
         <Button
           type="button"
           variant="outline"
-          disabled={busy !== null}
+          disabled
           onClick={() => handleOAuth("github")}
         >
           {busy === "github" ? (
